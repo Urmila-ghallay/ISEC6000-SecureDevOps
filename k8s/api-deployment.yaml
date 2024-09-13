@@ -72,6 +72,10 @@ spec:
                   name: backend-env
           image: ghcr.io/saleor/saleor:3.20
           name: api
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
 
           ports:
             - containerPort: 8000
