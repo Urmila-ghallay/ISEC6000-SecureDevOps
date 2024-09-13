@@ -32,7 +32,7 @@ spec:
                   key: CELERY_BROKER_URL
                   name: backend-env
             - name: DASHBOARD_URL
-              value: http://localhost:9000/
+              value: http://localhost:9002/
             - name: DATABASE_URL
               valueFrom:
                 configMapKeyRef:
@@ -75,7 +75,7 @@ spec:
           resources:
             limits:
               memory: "128Mi"
-              cpu: "500m"
+              cpu: "700m"
 
           ports:
             - containerPort: 8000
